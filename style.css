@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    transition: background 0.5s, color 0.5s;
+    background: #ffffff;
+    color: #000000;
+}
+
+.all-block {
+    max-width: 800px;
+    margin: 50px auto; /* зо */
+    padding: 40px; /* вн */
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #b60000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+#localStorageInfo {
+  background: #f8f8f8;
+  border-top: 1px solid #ccc;
+}
+
+.day-night {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#time {
+    background: linear-gradient(135deg, #fceabb, #f8b500); 
+    border: none;
+    border-radius: 50%;
+    padding: 12px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#time:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.night #time {
+    background: linear-gradient(135deg, #2c3e50, #4b6cb7); /* тёмная тема */
+}
+
+body.night {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.night .all-block {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+}
+
+body.night #localStorageInfo {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.comments-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.comments-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+.comment h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #444;
+}
+.comment .email {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+.comment p {
+    margin: 0;
+    color: #555;
+    line-height: 1.4;
+}

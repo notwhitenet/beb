@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме Фомин Євген</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="day-night">
+    <button id="time">🌕</button>
+</div>
+<h1>Фомин Євген</h1>
+<div class="all-block">
+    <h2>Контактна інформація</h2>
+    <ul>
+        <li>Email: gaga@gmail.com</li>
+        <li>Телефон: +380 77 777 1369</li>
+        <li>Місто: Львів, Україна</li>
+    </ul>
+
+    <h2>Мета</h2>
+    <p>Отримати позицію фронтенд-розробника в компанії, де зможу реалізувати свої знання а також розвиватися в галузі веб-дизайну та розробки.</p>
+
+    <h2>Освіта</h2>
+    <ul>
+        <li><strong>Національний університет «Львівський національний університет імені Івана Франка»</strong><br>
+            Спеціальність: Кібербезпека<br>
+            Роки навчання: 2022 – 2026
+        </li>
+    </ul>
+
+    <h2>Досвід роботи</h2>
+    <ul>
+        <li>
+            <b>Frontend-розробник — якась там компанія</b><br> 
+            Червень 2024 – Серпень 2024<br>
+            Задачі на проекті:
+            <ul>
+                <li>Верстка сторінок за макетами Figma (HTML5, CSS3)</li>
+                <li>Інтеграція анімацій</li>
+                <li>Співпраця з командою дизайнерів</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Навички</h2>
+    <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Git, GitHub, Docker, Kubernetes, aws, jenkins</li>
+        <li>VS Code, PyCharm</li>
+        <li>Основи роботи з API, FastAPI (Spotify, Discord)</li>
+    </ul>
+
+    <h2>Мови</h2>
+    <ul>
+        <li>Українська — рідна</li>
+        <li>Англійська — середній рівень</li>
+    </ul>
+</div>
+
+<div class="comments-section">
+    <h2>Коментарі</h2>
+    <div id="comments"></div>
+</div>
+
+<footer>
+    <div id="localStorageInfo"></div>
+</footer>
+
+<div id="feedbackModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:20px; border-radius:10px; width:90%; max-width:500px; position:relative;">
+    <button id="closeModal" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:20px; cursor:pointer;">✖</button>
+    <h2>Форма зворотнього зв'язку</h2>
+    <form action="https://formspree.io/f/mzzrlogo" method="POST">
+      <label>
+        Ім’я:
+        <input type="text" name="name" required style="width:100%; padding:8px; margin:5px 0;">
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required style="width:100%; padding:8px; margin:5px 0;">
+      </label>
+      <label>
+        Номер телефону:
+        <input type="tel" name="phone" required style="width:100%; padding:8px; margin:5px 0;">
+      </label>
+      <label>
+        Повідомлення:
+        <textarea name="message" rows="4" required style="width:100%; padding:8px; margin:5px 0;"></textarea>
+      </label>
+      <button type="submit" style="background:#4CAF50; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Відправити</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
